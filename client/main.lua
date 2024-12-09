@@ -314,6 +314,8 @@ function RemoveItemsAfterRPDeath()
         Wait(0)
       end
       DoScreenFadeIn(800)
+      TriggerServerEvent("esx_ambulancejob:respawnAtHospital", ClosestHospital.coords)
+      TriggerEvent("esx_ambulancejob:respawnAtHospital", ClosestHospital.coords)
     end)
   end)
 end
